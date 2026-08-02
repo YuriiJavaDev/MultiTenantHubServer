@@ -25,10 +25,10 @@ tenants:
     username: postgres
     password: 1111
   tasks_db:
-    url: jdbc:postgresql://localhost:5432/tasks_db
+    url: jdbc:postgresql://localhost:5432/my_assistant_db
     username: postgres
     password: tasks
   coffee_db:
-    url: jdbc:postgresql://localhost:5432/coffee_db
+    url: jdbc:postgresql://localhost:5432/coffeeshop_db
     username: postgres
     password: coffee
