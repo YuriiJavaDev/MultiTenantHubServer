@@ -1,4 +1,4 @@
-# Standard JPA Server Initialization.
+## Multi-tenant backend server.
 ### Description: Implementation of a multi-tenant backend server using Spring Boot and Dynamic Routing Data Source to manage multiple PostgreSQL databases (default_db, tasks_db, coffee_db) at runtime.
 
 #### Requirements Compliance: Successfully resolved Hibernate initialization conflicts and metadata access issues for dynamic routing data sources.
