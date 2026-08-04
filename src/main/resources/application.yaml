@@ -1,23 +1,13 @@
-#spring:
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    show-sql: true
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.PostgreSQLDialect
-
 spring:
   jpa:
     hibernate:
-      ddl-auto: none # Вимикаємо автооновлення схеми на старті, щоб Hibernate не чіпав БД
+      ddl-auto: none
     show-sql: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        # Вимикаємо отримання метаданих через підключення на старті
-        temp:
-          use_jdbc_metadata_defaults: false
+        boot:
+          allow_jdbc_metadata_access: false
 
 tenants:
   default_db:
@@ -27,8 +17,8 @@ tenants:
   tasks_db:
     url: jdbc:postgresql://localhost:5432/my_assistant_db
     username: postgres
-    password: tasks
+    password: 1111
   coffee_db:
     url: jdbc:postgresql://localhost:5432/coffeeshop_db
     username: postgres
-    password: coffee
+    password: 1111
